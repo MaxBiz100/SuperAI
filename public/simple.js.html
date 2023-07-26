@@ -1,9 +1,9 @@
 <script>
 function myFunc() {
-  var myValue = document.getElementById("myText").value;
-  document.getElementById("myDiv").innerHTML = myValue;
 }
 </script>
 <input type="text" value="Hi" id="myText">
 <div id="myDiv"> ... </div> 
-<input type="button" value="input" onclick="myFunc()">
+<input type="button" value="input" onclick=" {
+  var myValue = document.getElementById('myText').value;
+  document.getElementById('myDiv').innerHTML = myValue; }">
